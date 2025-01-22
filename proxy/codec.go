@@ -41,6 +41,10 @@ type frame struct {
 	payload []byte
 }
 
+func (f *frame) Bytes() []byte {
+	return f.payload
+}
+
 // NewFrame constructs a frame for raw codec.
 func NewFrame(payload []byte) any {
 	return &frame{payload: payload}
