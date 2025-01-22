@@ -41,6 +41,10 @@ type frame struct {
 	payload []byte
 }
 
+type Frame interface {
+	Bytes() []byte
+}
+
 func (f *frame) Bytes() []byte {
 	return f.payload
 }
