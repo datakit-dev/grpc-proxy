@@ -1,4 +1,4 @@
-module github.com/siderolabs/grpc-proxy
+module github.com/datakit-dev/grpc-proxy
 
 go 1.23.0
 

@@ -73,7 +73,7 @@ FROM tools AS proto-compile
 COPY --from=proto-specs / /
 RUN protoc -I/testservice --go_out=paths=source_relative:/testservice --go-grpc_out=paths=source_relative:/testservice /testservice/test.proto
 RUN rm /testservice/test.proto
-RUN goimports -w -local github.com/siderolabs/grpc-proxy /testservice
+RUN goimports -w -local github.com/datakit-dev/grpc-proxy /testservice
 RUN gofumpt -w /testservice
 
 # runs gofumpt

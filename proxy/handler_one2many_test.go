@@ -28,8 +28,8 @@ import (
 	"google.golang.org/protobuf/encoding/protowire"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/siderolabs/grpc-proxy/proxy"
-	pb "github.com/siderolabs/grpc-proxy/testservice"
+	"github.com/datakit-dev/grpc-proxy/proxy"
+	pb "github.com/datakit-dev/grpc-proxy/testservice"
 )
 
 const (

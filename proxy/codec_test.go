@@ -8,8 +8,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc/mem"
 
-	"github.com/siderolabs/grpc-proxy/proxy"
-	talos_testproto "github.com/siderolabs/grpc-proxy/testservice"
+	"github.com/datakit-dev/grpc-proxy/proxy"
+	talos_testproto "github.com/datakit-dev/grpc-proxy/testservice"
 )
 
 func TestCodec_ReadYourWrites(t *testing.T) {
